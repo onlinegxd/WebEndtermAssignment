@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- NavigationBar -->
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="index.html"> <img src="img/rsz_logo.png"> </a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html"> Home </a>
+					</li>
+					<li>
+						<a class="nav-link" href="search.html"> Search </a>
+					</li>
+					<li>
+						<a class="nav-link" href="login.html"> Log in </a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!--Registration-->
+	<form class="sign needs-validation" onsubmit="validation()" novalidate>
+		<h1>Sign up</h1><br />
+		<input class="form-control" type="text" name="name" placeholder="Full name" required>
+		<input class="form-control" type="email" name="email" id="email" placeholder="Email address" required>
+		<input class="form-control" type="password" name="password" id="password" placeholder="Password" required>
+		<input class="form-control" type="password" name="password" id="password2" placeholder="Repeat Password" required>
+		<a href="#" onclick="$('.sign').hide();$('.login').show('slow')">Already Have Account ?</a>
+		<input class="btn btn-primary btn-lg mt-3" class="button" type="submit" value="Sign Up" title="Submit form">
+	</form>
+
+	<form class="login needs-validation" onsubmit="authorization()" novalidate>
+		<h1>Log in</h1><br />
+		<input class="form-control" type="email" name="email" id="emailLog" placeholder="Email address" required>
+		<input class="form-control" type="password" name="password" id="passwordLog" placeholder="Password" required>
+		<a href="#" onclick="$('.login').hide();$('.sign').show('slow')">Do not have account ?</a>
+		<input class="btn btn-primary btn-lg" class="button" type="submit" value="Log In" title="Submit form">
+	</form>
+
+	<!--footer-->
+	<footer>
+		<div class="container-fluid padding">
+			<div class="row text-center">
+				<div class="col-md-4">
+					<img src="img/rsz_logo.png">
+					<hr class="light">
+					<p> 1111-1111-1111 </p>
+					<p> email@techzone.com </p>
+					<p> Saint st. 15 </p>
+					<p> New York </p>
+				</div>
+				<div class="col-md-4">
+					<hr class="light">
+					<h5> Working Hours </h5>
+					<hr class="light">
+					<p> 24/7 </p>
+					<p> No Weekends </p>
+					<p> No Breaks </p>
+				</div>
+				<div class="col-md-4">
+					<img src="img/rsz_logo.png">
+					<hr class="light">
+					<p> Sevice </p>
+					<p> 1111-1111-1111 </p>
+					<p> 1111-1111-1111 </p>
+					<p> 1111-1111-1111 </p>
+				</div>
+				<div class="col-12">
+					<hr class="light-100">
+					<h5>&copy; techzone.com </h5>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script>
+		// Example starter JavaScript for disabling form submissions if there are invalid fields
+		(function () {
+			'use strict';
+			window.addEventListener('load', function () {
+				// Fetch all the forms we want to apply custom Bootstrap validation styles to
+				var forms = document.getElementsByClassName('needs-validation');
+				// Loop over them and prevent submission
+				var validation = Array.prototype.filter.call(forms, function (form) {
+					form.addEventListener('submit', function (event) {
+						if (form.checkValidity() === false) {
+							event.preventDefault();
+							event.stopPropagation();
+						}
+						form.classList.add('was-validated');
+					}, false);
+				});
+			}, false);
+		})();
+	</script>
+</body>
+
+</html>

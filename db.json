@@ -1,0 +1,72 @@
+[
+	{
+		"brendId": 26,
+		"Id": 1,
+		"ModelName": "TV",
+		"image": "https://techzone.com.ua/img/category/4a/4a9649293778150b0d42f2aa01caa5c8/televzori-medium-95-02231553270.jpg",
+		"price": 100000
+	},
+	{
+		"brendId": 88,
+		"Id": 2,
+		"ModelName": "Loudspeakers",
+		"image": "https://techzone.com.ua/img/category/4a/4a9649293778150b0d42f2aa01caa5c8/akustichn-sistemi-medium-95-02241154160.jpg",
+		"price": 75000
+	},
+	{
+		"brendId": 11,
+		"Id": 3,
+		"ModelName": "Subwoofers",
+		"image": "https://techzone.com.ua/img/category/4a/4a9649293778150b0d42f2aa01caa5c8/sabvuferi-medium-95-02241312280.jpg",
+		"price": 55000
+	},
+	{
+		"brendId": 32,
+		"Id": 4,
+		"ModelName": "Guitar",
+		"image": "https://techzone.com.ua/img/category/4a/4a9649293778150b0d42f2aa01caa5c8/-gtari-medium-95-07031828150.jpg",
+		"price": 35000
+	},
+	{
+		"brendId": 56,
+		"Id": 5,
+		"ModelName": "Network equipment",
+		"image": " https://techzone.com.ua/img/category/4a/4a9649293778150b0d42f2aa01caa5c8/merezheve-obladnannya-medium-95-07011515500.jpg",
+		"price": 15000
+	},
+	{
+		"brendId": 89,
+		"Id": 6,
+		"ModelName": "Bluetooth headsets",
+		"image": "https://techzone.com.ua/img/category/4a/4a9649293778150b0d42f2aa01caa5c8/bluetooth-garnturi-medium-95-10011255530.jpg",
+		"price": 25000
+	},
+	{
+		"brendId": 47,
+		"Id": 7,
+		"ModelName": "Smartwatch",
+		"image": "https://techzone.com.ua/img/category/4a/4a9649293778150b0d42f2aa01caa5c8/smart-godinnik-medium-95-02221158030.jpg ",
+		"price": 30000
+	},
+	{
+		"brendId": 20,
+		"Id": 8,
+		"ModelName": "Auto acoustics",
+		"image": "https://techzone.com.ua/img/category/4a/4a9649293778150b0d42f2aa01caa5c8/avtoakustika-medium-95-02271050340.jpeg",
+		"price": 60000
+	},
+	{
+		"brendId": 90,
+		"Id": 9,
+		"ModelName": "Hard disks",
+		"image": "https://techzone.com.ua/img/category/4a/4a9649293778150b0d42f2aa01caa5c8/zhorstk-diski-medium-95-02241128490.jpg",
+		"price": 10000
+	},
+	{
+		"brendId": 61,
+		"Id": 10,
+		"ModelName": "Autosettlers",
+		"image": "https://techzone.com.ua/img/category/4a/4a9649293778150b0d42f2aa01caa5c8/avtopdsilyuvach-medium-95-02271048160.jpg ",
+		"price": 55000
+	}
+]
